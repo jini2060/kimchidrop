@@ -40,7 +40,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: translateY(15px);
 }
 .logo-wrap img {
   display: block;
@@ -189,14 +188,14 @@ h2 {
 }
 .product-card {
   overflow: hidden;
-  background: #efdfcf;
+  background: #f3f0ed;
   color: var(--dark);
 }
 .product-card.mild {
-  background: var(--yellow);
+  background: #f3f0ed;
 }
 .product-card.vegan {
-  background: var(--green);
+  background: #f3f0ed;
 }
 .product-meta {
   display: flex;
@@ -224,7 +223,15 @@ h2 {
 .product-info {
   min-height: 285px;
   padding: 25px;
-  background: #fff;
+}
+.product-card.original .product-info {
+  background: #efdfcf;
+}
+.product-card.mild .product-info {
+  background: var(--yellow);
+}
+.product-card.vegan .product-info {
+  background: var(--green);
 }
 .product-info h3 {
   margin: 0 0 12px;
@@ -247,6 +254,7 @@ h2 {
   padding: 7px 9px;
   border: 1px solid #cdc5bc;
   border-radius: 50px;
+  background: #fff;
   font-size: 10px;
   font-weight: 800;
   text-transform: uppercase;
