@@ -587,18 +587,103 @@ footer .label {
     aspect-ratio: 4 / 5;
   }
 }
-/* Product section — white background */
 .products {
   background: #ffffff;
-  color: #181512;
+  color: var(--dark);
 }
 
-/* Hide the large product heading */
-.products .section-heading h2 {
+.products .section-title h2 {
   display: none;
 }
 
-/* Reduce the empty space left by the removed heading */
-.products .section-heading {
+.products .section-title {
+  display: block;
   margin-bottom: 40px;
+}
+
+/* BONDI FARMERS MARKET */
+.market-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5vw;
+  align-items: center;
+  padding: 80px 5vw;
+  background: #ffffff;
+  color: var(--dark);
+}
+
+.market-text .section-label {
+  margin: 0 0 24px;
+  color: var(--red);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.market-text h2 {
+  margin: 0;
+  font-size: clamp(46px, 5.6vw, 88px);
+  line-height: 0.9;
+  letter-spacing: -0.06em;
+  text-transform: uppercase;
+}
+
+.market-text h2 span {
+  color: var(--red);
+}
+
+.market-description {
+  margin: 30px 0 18px;
+  font-size: 21px;
+}
+
+.market-time {
+  margin: 0;
+  padding-top: 18px;
+  border-top: 2px solid #2166c2;
+  font-size: 17px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.market-video {
+  width: 100%;
+  height: 440px;
+  overflow: hidden;
+  background: #eeeeee;
+}
+
+.market-video video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 900px) {
+  .products .section-title {
+    margin-bottom: 30px;
+  }
+
+  .market-section {
+    grid-template-columns: 1fr;
+    gap: 38px;
+    padding: 70px 20px;
+  }
+
+  .market-text h2 {
+    font-size: clamp(42px, 11.5vw, 60px);
+  }
+
+  .market-description {
+    margin: 24px 0 16px;
+    font-size: 18px;
+  }
+
+  .market-video {
+    height: auto;
+    aspect-ratio: 4 / 5;
+  }
 }
