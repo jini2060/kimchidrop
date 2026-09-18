@@ -587,3 +587,18 @@ footer .label {
     aspect-ratio: 4 / 5;
   }
 }
+/* Product section — white background */
+.products {
+  background: #ffffff;
+  color: #181512;
+}
+
+/* Hide the large product heading */
+.products .section-heading h2 {
+  display: none;
+}
+
+/* Reduce the empty space left by the removed heading */
+.products .section-heading {
+  margin-bottom: 40px;
+}
