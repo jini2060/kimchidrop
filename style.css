@@ -1094,3 +1094,60 @@ footer .label {
     width: 100%;
   }
 }
+
+/* PRODUCT SECTION ORDER BUTTON */
+
+.products .section-title {
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px !important;
+}
+
+.products .section-title .label {
+  margin: 0;
+}
+
+.products-shop-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 14px 22px;
+  border-radius: 50px;
+  background: #db1422;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transition: 0.25s ease;
+}
+
+.products-shop-button span {
+  font-size: 20px;
+  line-height: 1;
+  transition: transform 0.25s ease;
+}
+
+.products-shop-button:hover {
+  background: #171412;
+  transform: translateY(-2px);
+}
+
+.products-shop-button:hover span {
+  transform: translateX(5px);
+}
+
+@media (max-width: 600px) {
+  .products .section-title {
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .products-shop-button {
+    padding: 11px 15px;
+    font-size: 10px;
+    white-space: nowrap;
+  }
+}
