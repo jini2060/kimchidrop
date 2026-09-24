@@ -1151,3 +1151,24 @@ footer .label {
     white-space: nowrap;
   }
 }
+/* Product cards: let each photo carry its flavour colour */
+.products .product-card,
+.products .product-card.original,
+.products .product-card.mild,
+.products .product-card.vegan,
+.products .product-info {
+  background: #fff;
+}
+
+.products .product-card > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.products .product-info .heat-level {
+  display: inline-block;
+  margin-right: 0.65em;
+  white-space: nowrap;
+}
